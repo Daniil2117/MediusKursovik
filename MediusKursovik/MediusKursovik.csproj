@@ -1,0 +1,302 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{5B70CC2E-714C-42F7-A289-91ECF6FFB9B3}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>MediusKursovik</RootNamespace>
+    <AssemblyName>MediusKursovik</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="MaterialSkin, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\MaterialSkin.0.2.1\lib\MaterialSkin.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Classes\Verification.cs" />
+    <Compile Include="Forms\About_Us.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\About_Us.Designer.cs">
+      <DependentUpon>About_Us.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\AddReceptionOnPation.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\AddReceptionOnPation.Designer.cs">
+      <DependentUpon>AddReceptionOnPation.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\UpdateinWorkShedule.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\UpdateinWorkShedule.Designer.cs">
+      <DependentUpon>UpdateinWorkShedule.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Authorization.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Authorization.Designer.cs">
+      <DependentUpon>Authorization.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Contacts.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Contacts.Designer.cs">
+      <DependentUpon>Contacts.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\License.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\License.Designer.cs">
+      <DependentUpon>License.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\ListMedicDiagnosis.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\ListMedicDiagnosis.Designer.cs">
+      <DependentUpon>ListMedicDiagnosis.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\MainFormMedius.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\MainFormMedius.Designer.cs">
+      <DependentUpon>MainFormMedius.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\MakeAnAppointment.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\MakeAnAppointment.Designer.cs">
+      <DependentUpon>MakeAnAppointment.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\MenuNavigation.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\MenuNavigation.Designer.cs">
+      <DependentUpon>MenuNavigation.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\RegistrationUsers.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\RegistrationUsers.Designer.cs">
+      <DependentUpon>RegistrationUsers.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\UpdateSpecialist.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\UpdateSpecialist.Designer.cs">
+      <DependentUpon>UpdateSpecialist.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\ViewClieentRecord.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\ViewClieentRecord.Designer.cs">
+      <DependentUpon>ViewClieentRecord.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\ViewListSpecialists.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\ViewListSpecialists.Designer.cs">
+      <DependentUpon>ViewListSpecialists.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\AddDiagnosis.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\AddDiagnosis.Designer.cs">
+      <DependentUpon>AddDiagnosis.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\ViewPatient.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\ViewPatient.Designer.cs">
+      <DependentUpon>ViewPatient.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\ViewReceptionPatient.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\ViewReceptionPatient.Designer.cs">
+      <DependentUpon>ViewReceptionPatient.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\ViewRewies.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\ViewRewies.Designer.cs">
+      <DependentUpon>ViewRewies.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\ViewWorkShedule.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\ViewWorkShedule.Designer.cs">
+      <DependentUpon>ViewWorkShedule.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\WriteReviews.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\WriteReviews.Designer.cs">
+      <DependentUpon>WriteReviews.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\ViewServices.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\ViewServices.Designer.cs">
+      <DependentUpon>ViewServices.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Warning.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Warning.Designer.cs">
+      <DependentUpon>Warning.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\YourPage.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\YourPage.Designer.cs">
+      <DependentUpon>YourPage.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Models\Connect.cs" />
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="Forms\About_Us.resx">
+      <DependentUpon>About_Us.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\AddReceptionOnPation.resx">
+      <DependentUpon>AddReceptionOnPation.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\UpdateinWorkShedule.resx">
+      <DependentUpon>UpdateinWorkShedule.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Authorization.resx">
+      <DependentUpon>Authorization.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Contacts.resx">
+      <DependentUpon>Contacts.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\License.resx">
+      <DependentUpon>License.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\ListMedicDiagnosis.resx">
+      <DependentUpon>ListMedicDiagnosis.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\MainFormMedius.resx">
+      <DependentUpon>MainFormMedius.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\MakeAnAppointment.resx">
+      <DependentUpon>MakeAnAppointment.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\MenuNavigation.resx">
+      <DependentUpon>MenuNavigation.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\RegistrationUsers.resx">
+      <DependentUpon>RegistrationUsers.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\UpdateSpecialist.resx">
+      <DependentUpon>UpdateSpecialist.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\ViewClieentRecord.resx">
+      <DependentUpon>ViewClieentRecord.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\ViewListSpecialists.resx">
+      <DependentUpon>ViewListSpecialists.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\AddDiagnosis.resx">
+      <DependentUpon>AddDiagnosis.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\ViewPatient.resx">
+      <DependentUpon>ViewPatient.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\ViewReceptionPatient.resx">
+      <DependentUpon>ViewReceptionPatient.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\ViewRewies.resx">
+      <DependentUpon>ViewRewies.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\ViewWorkShedule.resx">
+      <DependentUpon>ViewWorkShedule.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\WriteReviews.resx">
+      <DependentUpon>WriteReviews.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\ViewServices.resx">
+      <DependentUpon>ViewServices.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Warning.resx">
+      <DependentUpon>Warning.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\YourPage.resx">
+      <DependentUpon>YourPage.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <None Include="packages.config" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Pictures\Contacts\Contacts1.PNG" />
+    <None Include="Pictures\Contacts\Contacts2.PNG" />
+    <Content Include="Pictures\Icon.PNG" />
+    <None Include="Pictures\license\4license.jpg" />
+    <None Include="Pictures\license\3license.jpg" />
+    <None Include="Pictures\license\2license.jpg" />
+    <None Include="Pictures\license\1license.jpg" />
+    <None Include="Pictures\icons8-high-importance-50.png" />
+    <None Include="Pictures\reviews.PNG" />
+    <None Include="Pictures\questions.PNG" />
+    <None Include="Pictures\photo\Glav.png" />
+    <None Include="Pictures\Medius_photo.jpg" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
